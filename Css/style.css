@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+}
+
+
+figcaption.caption{
+    --space-value:10px;
+    bottom: var(--space-value) ;
+    right: var(--space-value);
+    left: var(--space-value);
+    text-align: center;
+    background-color: rgb(65, 116, 135 ,1);
+    color: white;
+    padding: 10px;
+    transform: translateY(calc(100% + var(--space-value)));
+    transition: 0.5s all;
+}
+.innerDiv{
+    background-image: url(../Img/1.jpg);
+    background-size: 100% 100% ;
+    width: 800px;
+    height: 450px;
+ }
+ .innerDiv i {
+    cursor: pointer;
+ }
+ figure:hover .caption{
+    transform: translateY(0);
+ }
+
+
+
